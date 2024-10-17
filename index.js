@@ -30,9 +30,9 @@ const createButton = function () {
     const RandomNumbers = Math.floor(Math.random() * 76) + 1;
     console.log(RandomNumbers);
     const selectedNumbers = document.getElementsByClassName("numbersh3");
-    selectedNumbers[RandomNumbers].style.backgroundColor = "pink";
+    selectedNumbers[RandomNumbers].parentNode.style.backgroundColor = "pink";
     const selectedNumberscartellina = document.getElementsByClassName("numbersCartellina");
-    selectedNumberscartellina[RandomNumbers].style.backgroundColor = "pink";
+    selectedNumberscartellina[RandomNumbers].parentNode.style.backgroundColor = "pink";
   };
   const div1 = document.getElementById("tombola");
   div1.classList.add ("div1");
